@@ -150,11 +150,11 @@ class Database
 		{
 			if (is_array($val) && count($val) >= 2)
 			{
-				$statement->bindByRef($param, $val[0], $val[1]);
+				$statement->bind($param, $val[0], $val[1]);
 			}
 			else
 			{
-				$statement->bindByRef($param, $val);
+				$statement->bind($param, $val);
 			}
 		}
 
